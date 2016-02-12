@@ -1,7 +1,0 @@
-package ls.demo;
-
-import android.app.Activity;
-
-public class LifecycleActivity extends Activity {
-	
-}
