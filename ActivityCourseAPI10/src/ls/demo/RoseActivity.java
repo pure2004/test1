@@ -19,6 +19,7 @@ public class RoseActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		
 		Log.i("ls log", "onCreate RoseActivity");
+		Log.i("ls log", "RoseActivity TaskId="+getTaskId());
 		
 		setContentView(R.layout.layout_rose);
 		

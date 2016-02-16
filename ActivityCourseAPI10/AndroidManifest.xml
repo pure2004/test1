@@ -12,8 +12,8 @@
 <!--     <uses-permission android:name="android.permission.CALL_PHONE" />" -->
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:icon="@drawable/ic_launcher">
+<!--         android:label="@string/app_name" > -->
 <!--         android:theme="@style/AppTheme" > -->
        	<activity 
        	    android:name=".Activity1"
@@ -25,7 +25,8 @@
             </intent-filter> -->
             
        	</activity>
-       	<activity android:name="RoseActivity">
+       	<activity android:name=".RoseActivity"
+       	    android:label="RoseActivity">
        	    <intent-filter >
        	        <action android:name="ls.demo.WATCHMOVIE" />
        	        <category android:name="android.intent.category.DEFAULT" />
@@ -33,14 +34,31 @@
        	    </intent-filter>
        	    
        	</activity>
-       	<activity android:name="LifecycleActivity">
-       	    <intent-filter >
+       	<activity android:name=".LifecycleActivity" android:configChanges="orientation|touchscreen"
+       	    android:label="LifecycleActivity">"
+       	   <!-- <intent-filter >
        	        <action android:name="android.intent.action.MAIN" />
      	        <category android:name="android.intent.category.LAUNCHER" />"
-	        </intent-filter>
+	        </intent-filter> -->
        	</activity>
        	
-       	<activity android:name=".FloatActivity" android:theme="@style/Theme.FloatActivity">
+       	<activity android:name=".FloatActivity" android:theme="@style/Theme.FloatActivity"
+       	    android:label="FloatActivity">
+       	    
+       	</activity>
+       	<activity android:name=".ATaskActivity"
+       	   android:label="ATaskActivity"
+       	   android:clearTaskOnLaunch="false"
+       	   android:excludeFromRecents="false"
+       	   android:process="ls.customProcess"> 
+       	   <intent-filter>
+       	        <action android:name="android.intent.action.MAIN" />
+       	        <category android:name="android.intent.category.LAUNCHER"/>
+       	    </intent-filter>
+       	</activity>
+       	<activity android:name=".BTaskActivity"
+       	    android:label="BTaskActivity"
+       	    android:finishOnTaskLaunch="false">
        	    
        	</activity>
     </application>

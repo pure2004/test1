@@ -16,9 +16,10 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
-        public static final int button1=0x7f060002;
         public static final int buttonDialog=0x7f060006;
         public static final int buttonRose=0x7f060008;
+        public static final int buttonStartA=0x7f060002;
+        public static final int buttonStartB=0x7f060009;
         public static final int buttonStartPartActivity=0x7f060005;
         public static final int buttonStartRoseActivity=0x7f060004;
         public static final int editTextState=0x7f060007;
@@ -31,6 +32,7 @@ public final class R {
         public static final int layout_floatactivity=0x7f030001;
         public static final int layout_lifecyccleactivity=0x7f030002;
         public static final int layout_rose=0x7f030003;
+        public static final int layout_task=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

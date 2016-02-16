@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -29,6 +30,7 @@ public class LifecycleActivity extends Activity {
 		}
 		
 		Log.i("ls log", "onCreate LifecycleActivity");
+		Log.i("ls log", "LifecycleActivity TaskId="+getTaskId());
 		
 		Button _button=(Button) findViewById(R.id.buttonStartRoseActivity);
 		_button.setOnClickListener(new OnClickListener() {
@@ -136,6 +138,19 @@ public class LifecycleActivity extends Activity {
 		outState.putString("lsInstanceState", "ls"+mEditText.getText().toString());
 		
 		Log.i("ls log", "onSaveInstanceState LifecycleActivity");
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		// TODO Auto-generated method stub
+		super.onConfigurationChanged(newConfig);
+		Log.i("ls log", "onConfigurationChanged LifecycleActivity");
+		if(newConfig.orientation==Configuration.ORIENTATION_LANDSCAPE){
+			Log.i("ls log", "onConfiguration Changed to Landscape");
+		}else{
+			Log.i("ls log", "onConfiguration Changed to Portrate");
+		}
+			
 	}
 	
 }

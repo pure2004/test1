@@ -27,7 +27,7 @@ public class Activity1 extends Activity {
 		
 		//this.getWindow().setContentView(this.getLayoutInflater().inflate(R.layout.layout_activity1, null));
 	
-		Button _button=(Button) this.findViewById(R.id.button1);
+		Button _button=(Button) this.findViewById(R.id.buttonStartA);
 		_button.setText("ls       ");
 		
 		Button _newButton=new Button(this);
