@@ -50,7 +50,8 @@
        	   android:label="ATaskActivity"
        	   android:clearTaskOnLaunch="false"
        	   android:excludeFromRecents="false"
-       	   android:process="ls.customProcess"> 
+       	   android:process="ls.customProcess"
+       	   android:exported="true"> 
        	   <intent-filter>
        	        <action android:name="android.intent.action.MAIN" />
        	        <category android:name="android.intent.category.LAUNCHER"/>
@@ -58,9 +59,12 @@
        	</activity>
        	<activity android:name=".BTaskActivity"
        	    android:label="BTaskActivity"
-       	    android:finishOnTaskLaunch="false">
+       	    android:finishOnTaskLaunch="false"
+       	    android:launchMode="singleInstance" >"
        	    
        	</activity>
+       	
+       	<service android:name=".AdamService"></service>
     </application>
 
 </manifest>

@@ -18,7 +18,7 @@ public class BTaskActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.layout_task);
 		
-		Log.i("ls log", "BTaskActivity:"+mIndex+"  TaskId="+getTaskId());
+		Log.i("ls log", "BTaskActivity onCreate:"+mIndex+"  TaskId="+getTaskId());
 		++mIndex;
 		Button _buttonStartA=(Button) findViewById(R.id.buttonStartA);
 		_buttonStartA.setOnClickListener(new OnClickListener() {
@@ -42,4 +42,18 @@ public class BTaskActivity extends Activity {
 			}
 		});
 	}
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		Log.i("ls log", "BTaskActivity onDestory:"+mIndex+"  TaskId="+getTaskId());
+	}
+	@Override
+	protected void onNewIntent(Intent intent) {
+		// TODO Auto-generated method stub
+		super.onNewIntent(intent);
+		Log.i("ls log", "BTaskActivity onNewIntent:"+mIndex+"  TaskId="+getTaskId());
+	}
+	
+	
 }
