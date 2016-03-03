@@ -52,10 +52,7 @@
        	   android:excludeFromRecents="false"
        	   android:process="ls.customProcess"
        	   android:exported="true"> 
-       	   <intent-filter>
-       	        <action android:name="android.intent.action.MAIN" />
-       	        <category android:name="android.intent.category.LAUNCHER"/>
-       	    </intent-filter>
+       	   
        	</activity>
        	<activity android:name=".BTaskActivity"
        	    android:label="BTaskActivity"
@@ -63,8 +60,26 @@
        	    android:launchMode="singleInstance" >"
        	    
        	</activity>
+       	<activity android:name=".ServiceActivity" >
+       	    
+       	</activity>
        	
+       	<activity android:name=".AdamServiceActivity" >
+       	    
+       	</activity>
+       	
+       	<activity android:name=".AdamMediaServiceActivity" >
+       	    <intent-filter>
+       	        <action android:name="android.intent.action.MAIN" />
+       	        <category android:name="android.intent.category.LAUNCHER"/>
+       	    </intent-filter>
+       	</activity>
+       	
+       	<service android:name=".AdamCommandService"></service>
+       	<service android:name=".AdamIntentService"></service>
+       	<service android:name=".AdamBinderService"></service>
        	<service android:name=".AdamService"></service>
+       	<service android:name=".AdamMediaService"></service>
     </application>
 
 </manifest>

@@ -16,7 +16,7 @@ public class BTaskActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.layout_task);
+		setContentView(R.layout.layout_task_activity);
 		
 		Log.i("ls log", "BTaskActivity onCreate:"+mIndex+"  TaskId="+getTaskId());
 		++mIndex;

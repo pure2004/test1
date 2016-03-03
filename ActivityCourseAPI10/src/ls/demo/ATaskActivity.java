@@ -11,13 +11,13 @@ import android.widget.Button;
 public class ATaskActivity extends Activity {
 	
 	private static int mIndex=1;
-	private Intent mintent;
+	private Intent mIntent;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.layout_task);
+		setContentView(R.layout.layout_task_activity);
 		
 		Log.i("ls log", "ATaskActivity onCreate:"+mIndex+"  TaskId="+getTaskId());
 		++mIndex;
@@ -27,10 +27,9 @@ public class ATaskActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				/*Intent _intent=new Intent(ATaskActivity.this, ATaskActivity.class);
-				startActivity(_intent);*/
-				mintent=new Intent(ATaskActivity.this,AdamService.class);
-				startService(mintent);
+				Intent _intent=new Intent(ATaskActivity.this, ATaskActivity.class);
+				startActivity(_intent);
+				
 			}
 		});
 		
@@ -40,9 +39,9 @@ public class ATaskActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				/*Intent _intent=new Intent(ATaskActivity.this, BTaskActivity.class);
-				startActivity(_intent);*/
-				stopService(mintent);
+				Intent _intent=new Intent(ATaskActivity.this, BTaskActivity.class);
+				startActivity(_intent);
+				
 			}
 		});
 	}

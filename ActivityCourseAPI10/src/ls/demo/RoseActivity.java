@@ -21,7 +21,7 @@ public class RoseActivity extends Activity {
 		Log.i("ls log", "onCreate RoseActivity");
 		Log.i("ls log", "RoseActivity TaskId="+getTaskId());
 		
-		setContentView(R.layout.layout_rose);
+		setContentView(R.layout.layout_rose_activity);
 		
 		/*String lsValue;
 		mIntent=this.getIntent();

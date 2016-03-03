@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/buttonStartCommandService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StartCommandServic" />
+
+    <Button
+        android:id="@+id/buttonStopCommandService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StopCommandService" />
+
+    <Button
+        android:id="@+id/buttonStartIntentService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StartIntentService" />
+    
+    <Button
+        android:id="@+id/buttonBinderService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BinderService" />
+    
+   
+	
+    <Button
+        android:id="@+id/buttonUnBinderService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UnBinderService" />
+    
+     <Button
+        android:id="@+id/buttonBinderService_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BinderService_1" />
+</LinearLayout>
